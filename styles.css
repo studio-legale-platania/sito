@@ -1,0 +1,104 @@
+body {
+    font-family: "Baskervville", serif;
+    background-color: #f9f5e8;
+    margin: 0;
+    padding: 0;
+    color: #5F6060;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.logo {
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+h1 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; /* Spaziatura tra le carte */
+    justify-content: center; /* Allinea a sinistra */
+    width: 100%; /* Assicura che il contenitore occupi l'intera larghezza */
+    box-sizing: border-box; /* Includi padding e bordi */
+}
+
+.card {
+    flex: 1 1 calc(50% - 50px); /* 2 colonne */
+    max-width: calc(50% - 50px);
+    box-sizing: border-box; /* Assicura che padding/bordi siano inclusi */
+    margin: 0;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.card a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle; 
+}
+
+.baskervville-regular {
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.baskervville-regular-italic {
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Dispositivi piccoli (Mobile): Una colonna */
+@media (max-width: 768px) {
+    header {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    .cards {
+        flex-direction: column; /* Le card si dispongono in colonna */
+    }
+
+    .card {
+        flex: 1 1 100%; /* Una colonna */
+        max-width: 100%; /* Larghezza piena */
+    }
+}
